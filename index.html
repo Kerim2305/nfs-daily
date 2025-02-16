@@ -6,79 +6,41 @@
     <title>NFC Daily</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
-            background-image: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg');
+            background: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg') no-repeat center center fixed;
             background-size: cover;
-            background-position: center;
-            color: white;
-        }
-        .container {
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-        }
-        .text-box {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 90%;
-        }
-        h1 {
-            font-size: 20px;
-            font-weight: normal;
-            margin-bottom: 15px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        .audio-player {
-            margin-top: 20px;
+        .text-container {
+            max-width: 90%;
         }
         audio {
-            width: 80%;
-            max-width: 300px;
+            margin-top: 20px;
+            width: 300px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="text-box">
-            <h1>قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَدِلُكَ فِي زَوْجِهَا وَتَشْتَكِيّ إِلَى اللَّهِ وَاللَّهُ بَسْمَعُ تَحَاوُرَ كُمَا- إِنَّ ٱللَّهَ سَمِيعُ بَصِيرٌ</h1>
-            <p><strong>Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun</strong></p >
-            <p>真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。真主听著你们俩的辩论；真主确是全聪的，确是全明的。</p >
-        </div>
-
-        <div class="audio-player">
-            <audio id="audioPlayer" controls>
-                <source src="https://kerim2305.github.io/nfs-daily/audio.mp3" type="audio/mpeg">
-                <source src="https://kerim2305.github.io/nfs-daily/audio.ogg" type="audio/ogg">
-                您的浏览器不支持音频播放。
-            </audio>
-        </div>
+    <div class="text-container">
+        <p>قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَدِلُكَ فِي زَوْجِهَا وَتَشْتَكِيّ إِلَى اللَّهِ وَاللَّهُ</p >
+        <p>بَسْمَعُ تَحَاوُرَ كُمَا- إِنَّ ٱللَّهَ سَمِيعُ بَصِيرٌ</p >
+        <p>Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun</p >
+        <p>真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。真主听著你们俩的辩论；真主确是全聪的，确是全明的。</p >
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var audio = document.getElementById('audioPlayer');
-            var playPromise = audio.play();
-
-            if (playPromise !== undefined) {
-                playPromise.then(function () {
-                    console.log("音频自动播放成功");
-                }).catch(function (error) {
-                    console.log("自动播放被阻止，需手动播放", error);
-                });
-            }
-        });
-    </script>
+    
+    <audio controls autoplay>
+        <source src="https://kerim2305.github.io/nfs-daily/zapis.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放。
+    </audio>
 </body>
 </html>
