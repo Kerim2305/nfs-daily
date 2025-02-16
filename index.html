@@ -6,48 +6,57 @@
     <title>NFC Daily</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
             padding: 0;
-            background: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg') no-repeat center center fixed;
+            background-image: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg'); /* 替换为你的背景图 */
             background-size: cover;
-            height: 100vh;
+            background-position: center;
+            color: white;
+        }
+        .container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            color: white;
-            font-size: 24px;
-            font-family: Arial, sans-serif;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景层，增强可读性 */
+            padding: 20px;
         }
-
+        .text-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+        }
         h1 {
+            font-size: 24px;
             margin-bottom: 20px;
         }
-
-        audio {
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .audio-player {
             margin-top: 20px;
-            width: 80%;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="text-box">
+            <h1>قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَدِلُكَ فِي زَوْجِهَا وَتَشْتَكِيّ إِلَى اللَّهِ وَاللَّهُ بَسْمَعُ تَحَاوُرَ كُمَا- إِنَّ ٱللَّهَ سَمِيعُ بَصِيرٌ</h1>
+            <p><strong>Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun</strong></p >
+            <p>真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。真主听著你们俩的辩论；真主确是全聪的，确是全明的。</p >
+        </div>
 
-    <h1>
-        قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَادِلُكَ فِي زَوْجِهَا وَتَشْتَكِي إِلَى اللَّهِ وَاللَّهُ
-        يَسْمَعُ تَحَاوُرَكُمَا- إِنَّ ٱللَّهَ سَمِيعٌ بَصِيرٌ  
-        <br><br>
-        Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun  
-        <br><br>
-        真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。真主听著你们俩的辩论；真主确是全聪的，确是全明的。
-    </h1>
-
-    <!-- 播放音频 -->
-    <audio controls autoplay>
-        <source src="https://kerim2305.github.io/nfs-daily/ScreenRecording_02-16-2025%2023-56-23_1.mp4" type="audio/mp4">
-        您的浏览器不支持音频播放。
-    </audio>
-
+        <div class="audio-player">
+            <audio controls autoplay>
+                <source src="https://kerim2305.github.io/nfs-daily/虹莘路3783号%202.m4a" type="audio/mp4">
+                您的浏览器不支持音频播放。
+            </audio>
+        </div>
+    </div>
 </body>
 </html>
