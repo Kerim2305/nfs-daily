@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,40 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+            text-align: center;
             color: white;
             font-size: 24px;
             font-family: Arial, sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+        .content {
+            max-width: 80%;
+            direction: rtl;
+            font-size: 28px;
+            line-height: 1.8;
+        }
+        .transliteration {
+            font-size: 18px;
+            margin-top: 10px;
+            direction: ltr;
+        }
+        .translation {
+            font-size: 16px;
+            margin-top: 10px;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
-    欢迎来到 NFC Daily
+    <div class="content">
+        قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَادِلُكَ فِي زَوْجِهَا وَتَشْتَكِي إِلَى اللَّهِ وَاللَّهُ بَسْمَعُ تَحَاوُرَكُمَا ۚ إِنَّ ٱللَّهَ سَمِيعُۢ بَصِيرٌۭ
+    </div>
+    <div class="transliteration">
+        Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun
+    </div>
+    <div class="translation">
+        真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。真主听著你们俩的辩论；真主确是全聪的，确是全明的。
+    </div>
 </body>
 </html>
