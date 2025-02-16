@@ -10,7 +10,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            background-image: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg'); /* 替换为你的背景图 */
+            background-image: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg'); /* 确保背景图片 URL 正确 */
             background-size: cover;
             background-position: center;
             color: white;
@@ -31,15 +31,21 @@
             max-width: 90%;
         }
         h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 20px; /* 适当缩小字体 */
+            font-weight: normal;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         p {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.5;
         }
         .audio-player {
             margin-top: 20px;
+        }
+        audio {
+            width: 80%;
+            max-width: 300px;
         }
     </style>
 </head>
@@ -53,7 +59,7 @@
 
         <div class="audio-player">
             <audio controls autoplay>
-                <source src="https://kerim2305.github.io/nfs-daily/虹莘路3783号%202.m4a" type="audio/mp4">
+                <source src="https://kerim2305.github.io/nfs-daily/audio.mp3" type="audio/mpeg">
                 您的浏览器不支持音频播放。
             </audio>
         </div>
