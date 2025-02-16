@@ -17,30 +17,75 @@
             justify-content: center;
             text-align: center;
             color: white;
-            font-size: 24px;
             font-family: Arial, sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .text-container {
             max-width: 90%;
         }
+        .arabic-text {
+            font-size: 28px;
+            font-family: 'Amiri', serif;
+            direction: rtl; /* 右对齐阿拉伯文 */
+        }
+        .transliteration {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .translation {
+            font-size: 20px;
+        }
         audio {
             margin-top: 20px;
-            width: 300px;
+            width: 80%;
+            max-width: 300px;
+        }
+        .play-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .play-button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="text-container">
-        <p>قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَدِلُكَ فِي زَوْجِهَا وَتَشْتَكِيّ إِلَى اللَّهِ وَاللَّهُ</p >
-        <p>بَسْمَعُ تَحَاوُرَ كُمَا- إِنَّ ٱللَّهَ سَمِيعُ بَصِيرٌ</p >
-        <p>Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun</p >
-        <p>真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。真主听著你们俩的辩论；真主确是全聪的，确是全明的。</p >
+        <p class="arabic-text">
+            قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَادِلُكَ فِي زَوْجِهَا وَتَشْتَكِي إِلَى اللَّهِ وَاللَّهُ يَسْمَعُ تَحَاوُرَكُمَا- إِنَّ ٱللَّهَ سَمِيعٌ بَصِيرٌ
+        </p >
+        <p class="transliteration">
+            Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun
+        </p >
+        <p class="translation">
+            真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。真主听着你们俩的辩论；真主确是全聪的，确是全明的。
+        </p >
     </div>
+
+    <!-- 播放按钮 -->
+    <button class="play-button" onclick="playAudio()">播放音频</button>
     
-    <audio controls autoplay>
+    <!-- 音频播放器 -->
+    <audio id="audio">
         <source src="https://kerim2305.github.io/nfs-daily/zapis.mp3" type="audio/mpeg">
         您的浏览器不支持音频播放。
     </audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
 </body>
 </html>
