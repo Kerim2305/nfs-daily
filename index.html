@@ -10,7 +10,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
-            background-image: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg'); /* 确保背景图片 URL 正确 */
+            background-image: url('https://kerim2305.github.io/nfs-daily/IMG_0535.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -21,7 +21,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.5); /* 半透明背景层，增强可读性 */
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
         }
         .text-box {
@@ -31,7 +31,7 @@
             max-width: 90%;
         }
         h1 {
-            font-size: 20px; /* 适当缩小字体 */
+            font-size: 20px;
             font-weight: normal;
             margin-bottom: 15px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -58,11 +58,27 @@
         </div>
 
         <div class="audio-player">
-            <audio controls autoplay>
+            <audio id="audioPlayer" controls>
                 <source src="https://kerim2305.github.io/nfs-daily/audio.mp3" type="audio/mpeg">
+                <source src="https://kerim2305.github.io/nfs-daily/audio.ogg" type="audio/ogg">
                 您的浏览器不支持音频播放。
             </audio>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audio = document.getElementById('audioPlayer');
+            var playPromise = audio.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(function () {
+                    console.log("音频自动播放成功");
+                }).catch(function (error) {
+                    console.log("自动播放被阻止，需手动播放", error);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
