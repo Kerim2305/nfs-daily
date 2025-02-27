@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,70 +8,22 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            color: white;
-            background-image: url('https://raw.githubusercontent.com/Kerim2305/nfs-daily/main/IMG_0535.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .container {
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            display: inline-block;
-            margin-top: 10%;
-        }
-        .arabic {
-            font-size: 24px;
-            font-family: 'Amiri', serif;
-            line-height: 1.8;
-            direction: rtl;
+            background: url('https://raw.githubusercontent.com/Kerim2305/nfs-daily/main/IMG_1039.JPG') no-repeat center center fixed;
+            background-size: cover; /* 确保背景覆盖全屏 */
+            height: 100vh; /* 页面高度占满 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
         }
-        .transliteration {
-            font-size: 18px;
-            font-weight: bold;
-            line-height: 1.5;
-            margin-top: 20px;
-        }
-        .translation {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-top: 20px;
-        }
-        audio {
-            width: 80%;
-            margin-top: 20px;
+        img {
+            max-width: 100%; /* 确保图片宽度适配屏幕 */
+            height: auto; /* 高度自动调整 */
+            border-radius: 10px; /* 可选的圆角效果 */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 阿拉伯语 -->
-        <div class="arabic">
-            قَدْ سَمِعَ اللَّهُ قَوْلَ الَّتِي تُجَادِلُكَ فِي زَوْجِهَا وَتَشْتَكِي إِلَى اللَّهِ وَاللَّهُ
-            يَسْمَعُ تَحَاوُرَكُمَا- إِنَّ ٱللَّهَ سَمِيعٌ بَصِيرٌ
-        </div>
-
-        <!-- 罗马拼音 -->
-        <div class="transliteration">
-            Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha  
-            watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma  
-            inna Allaha sameeAAun baseerun
-        </div>
-
-        <!-- 中文翻译 -->
-        <div class="translation">
-            真主确已听取为丈夫而向你辩诉，并向真主诉苦者的陈述了。  
-            真主听着你们俩的辩论；真主确是全聪的，确是全明的。
-        </div>
-
-        <!-- 音频播放器 -->
-        <audio controls>
-            <source src="https://raw.githubusercontent.com/Kerim2305/nfs-daily/main/zapis.mp3" type="audio/mpeg">
-            您的浏览器不支持音频播放。
-        </audio>
-    </div>
+    < img src="https://raw.githubusercontent.com/Kerim2305/nfs-daily/main/IMG_1039.JPG" alt="NFC Daily Image">
 </body>
 </html>
